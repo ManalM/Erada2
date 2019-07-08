@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1052987202010",
+    "firebase_url": "https://erada2-56bec.firebaseio.com",
+    "project_id": "erada2-56bec",
+    "storage_bucket": "erada2-56bec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052987202010:android:d3e0037ded9fc515",
+        "android_client_info": {
+          "package_name": "com.example.android.erada2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052987202010-72ncsbddfkcq0r1rqd3g8ehrobvcsb49.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.erada2",
+            "certificate_hash": "e700941d365c7a3fdd26368eb7aa6d0d151f60c8"
+          }
+        },
+        {
+          "client_id": "1052987202010-3l8fs1p7o9c50mvpbn7e9rlbunpttrjv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLyG6PtfkqvaY5WDS-j8WZbBLz23uLCys"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052987202010-3l8fs1p7o9c50mvpbn7e9rlbunpttrjv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

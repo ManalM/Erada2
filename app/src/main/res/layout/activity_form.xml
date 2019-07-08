@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        tools:context=".FormActivity">
+
+        <ProgressBar
+            android:id="@+id/form_progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:indeterminate="true"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle1"
+            android:ems="10"
+            android:fontFamily="@font/bukra_regular"
+            android:hint="اسم الجهة"
+            android:inputType="textPersonName"
+            android:textDirection="rtl" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+
+            android:background="@drawable/buttonstyle1"
+            android:ems="10"
+            android:fontFamily="@font/bukra_regular"
+            android:hint="العنوان"
+            android:inputType="textPersonName"
+            android:textDirection="rtl" />
+
+        <EditText
+
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle1"
+            android:ems="10"
+            android:fontFamily="@font/bukra_regular"
+            android:hint="رقم التواصل "
+            android:inputType="phone"
+            android:textDirection="rtl" />
+
+        <EditText
+
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle1"
+            android:ems="10"
+            android:fontFamily="@font/bukra_regular"
+            android:hint="ايميل التواصل "
+
+            android:inputType="textEmailAddress"
+            android:textDirection="rtl" />
+
+        <EditText
+
+            android:id="@+id/descrition"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle1"
+            android:ems="10"
+            android:fontFamily="@font/bukra_regular"
+            android:hint="وصف الجهة"
+
+            android:inputType="textPersonName"
+            android:textDirection="rtl" />
+
+        <EditText
+
+            android:id="@+id/website"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonstyle1"
+            android:ems="10"
+            android:fontFamily="@font/bukra_regular"
+            android:hint="رابط الموقع"
+            android:inputType="textPersonName"
+            android:textDirection="rtl" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+
+                    android:id="@+id/lag"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonstyle1"
+                    android:ems="10"
+                    android:fontFamily="@font/bukra_regular"
+                    android:hint="خطوط الطول"
+                    android:inputType="numberDecimal"
+                    android:textDirection="rtl" />
+
+                <EditText
+
+                    android:id="@+id/lat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttonstyle1"
+                    android:ems="10"
+                    android:fontFamily="@font/bukra_regular"
+                    android:hint="خطوط العرض"
+                    android:inputType="numberDecimal"
+                    android:textDirection="rtl" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/saveLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:background="@drawable/buttonstyle1"
+                android:fontFamily="@font/bukra_regular"
+                android:text="الحصول على معلومات الموقع" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/bukra_regular"
+                android:text="فئة الجهة "
+                android:textDirection="rtl"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioSchool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:fontFamily="@font/bukra_regular"
+                    android:text="مدرسة"
+
+                    android:textDirection="rtl" />
+
+                <RadioButton
+                    android:id="@+id/radioCenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bukra_regular"
+                    android:text="مركز"
+
+                    android:textDirection="rtl" />
+
+                <RadioButton
+                    android:id="@+id/radioClinic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bukra_regular"
+                    android:text="عيادة"
+
+                    android:textDirection="rtl" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/uploadImage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/bukra_regular"
+                android:text="ارفع صورة من جهازك"
+                android:textDirection="rtl"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/userImage"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/defaul" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/register_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonstyle1"
+                android:fontFamily="@font/bukra_regular"
+                android:text="حفظ المعلومات"
+                android:textDirection="rtl"
+
+                />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttonstyle1"
+                android:fontFamily="@font/bukra_regular"
+
+                android:text="تسجيل الخروج"
+                android:textDirection="rtl" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

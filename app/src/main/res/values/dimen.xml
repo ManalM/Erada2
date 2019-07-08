@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>  <dimen name="list_item_height">88dp</dimen>
+    <dimen name="tool_bar_height">56dp</dimen>
+
+
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".registerActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="257dp"
+        android:layout_height="283dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="6dp"
+
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:background="#E0F7FD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/regi_progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:indeterminate="true"
+                android:visibility="invisible" />
+
+
+            <EditText
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:drawableRight="@drawable/username"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:fontFamily="@font/bukra_regular"
+                android:hint="  الإيميل "
+                android:inputType="textEmailAddress"
+                android:textDirection="rtl"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/regi_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableRight="@drawable/locked"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:fontFamily="@font/bukra_regular"
+                android:hint="كلمة المرور"
+                android:inputType="textPassword"
+                android:textDirection="rtl"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/regi_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableRight="@drawable/success"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:fontFamily="@font/bukra_regular"
+                android:hint="تأكيد كلمة المرور "
+                android:inputType="textPassword"
+                android:textDirection="rtl"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/reg_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="96dp"
+        android:background="@drawable/buttonstyle1"
+        android:fontFamily="@font/bukra_regular"
+        android:text="تسجيل حساب جديد"
+        android:textDirection="rtl"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.666" />
+
+
+</android.support.constraint.ConstraintLayout>
